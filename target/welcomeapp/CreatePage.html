@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+	border: 1px solid black;
+}
+.page{
+	margin-top:10%;
+	
+}
+.button{
+background:	#CD5C5C;
+color:white;
+}
+.container{
+
+}
+</style>
+<body background="html-color-codes-color-tutorials-903ea3cb.jpg">
+<div class="page">
+
+	<form action="./welcome1" Method="Post">
+		
+				 
+		<div class="container" background="html-color-codes-free-stock-photos-e10de82b.jpg">
+		
+		<table border="2" width="30%" cellpadding="2" color="white" 
+		style="
+    border: burlywood;
+    color: white;
+    background: #C70039;
+    margin-left: 35%;
+    margin-top: 3%;
+">
+			<tr>
+				<td>Account Name:</td>
+				<td><input type="text" name="Account_name"
+			value="Name"> </td>
+			</tr>
+			<tr>
+				<td>BirthDate:</td>
+				<td><input type="date"
+			name="BirthDate"></td>
+			</tr>
+			<tr>
+				<td>Account Type: </td>
+				<td><select name="Account_type">
+			<option value="saving" >Saving</option>
+			<option value="current" >Current</option>
+			
+
+		</select>
+			</tr>
+			<tr>
+				<td>MobileNo.</td>
+				<td><input type="text" name="Mobile_no"  pattern="^\d{10}" title="Enter a 10 digit mobile no"
+			value=""></td>
+			</tr>
+			<tr>
+				<td>Pan_no: </td>
+				<td><input type="Text" name="Pan_no"  
+			value="">
+			</td>
+			</tr>
+
+		</table>
+		<input type="hidden" name="operation"  
+			value="SAVE" >
+		<br>  <input type="submit" value="Create" class="button" style="margin-left:42%; width:15%;">
+		</div> 
+	</form>
+</div>
+
+</body>
+</html>
+

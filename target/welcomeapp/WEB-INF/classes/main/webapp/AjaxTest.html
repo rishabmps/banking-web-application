@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="AjaxTest()">Change Content</button>
+
+<script>
+function AjaxTest() {
+  var http;
+
+  if (window.XMLHttpRequest) {
+    http = new XMLHttpRequest();
+    
+    } 
+  http.onreadystatechange = function() {
+	  if (http.readyState==1) {
+	      alert("Ok got the connection");
+	    }
+	  if (http.readyState == 2 && http.status == 200) {
+	      alert("Url is correct");
+	    }
+	  if (http.readyState == 3 && http.status == 200) {
+	      alert("Processing");
+	    }
+    if (http.readyState == 4 && http.status == 200) {
+      document.getElementById("demo").innerHTML = http.responseText;
+    }
+  };
+  
+  http.open("GET", "Ajax.txt", true);
+  http.send();
+}
+</script>
+
+</body>
+</html>
+

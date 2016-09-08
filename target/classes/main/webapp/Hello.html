@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+	border: 1px solid black;
+}
+</style>
+<body>
+
+	<form action="./welcome1" Method="Post">
+		My name is:<br> <input type="text" name="firstname"
+			value="Mickey"> <br> <br> My education level is:<br>
+		<input type="radio" name="education" value="Grad" checked>
+		Graduate<br> <input type="radio" name="education"
+			value="UnderGrad"> UnderGraduate<br> <input type="radio"
+			name="education" value="PostGrad"> Post Grad <br> <br>
+		My current city is: <select name="city">
+			<option value="1" >Pune</option>
+			<option value="2" >Jaipur</option>
+			<option value="3" >Delhi</option>
+			<option value="4" >Mumbai</option>
+
+		</select> <br> <br> My Favourite Subjects are:<br> <input
+			type="checkbox" name="subject" value="Algo">Algorithms<br>
+		<input type="checkbox" name="subject" value="DSA">Data
+		Structures<br> <input type="checkBox" name="subject" value="OS">Operation
+		Systems<br> <input type="checkBox" name="subject" value="DB">Database
+		Systems <br> <br>
+		<table>
+			<tr>
+				<th>Subject</th>
+				<th>Rating</th>
+				<th>Remark</th>
+			</tr>
+			<tr>
+				<td>Java</td>
+				<td>10</td>
+				<td>Best Language</td>
+			</tr>
+			<tr>
+				<td>C++</td>
+				<td>9</td>
+				<td>Good Enough</td>
+			</tr>
+
+		</table>
+		<br> <br> My Ideas Joining Date: <input type="date"
+			name="joining_date"> <br> <br> My Ideas working
+		Experience: <br>
+		<textarea rows="4" cols="50" name="Experience">
+Write your experience here
+</textarea >
+		<br> Click to submit the form <input type="submit" value="Submit">
+	</form>
+
+
+</body>
+</html>
+
